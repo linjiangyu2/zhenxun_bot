@@ -27,7 +27,7 @@ async def get_weather_of_city(city: str) -> str:
     else:
         data_json = (
             await AsyncHttpx.get(
-                f"https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=&city={city[:-1]}"
+                f"https://v0.yiketianqi.com/free/day/api?unescape=1&version=v91&appid=29891721&appsecret=wqUj49VB&ext=&cityid=&city={city[:-1]}"
             )
         ).json()
         if wh := data_json.get('data'):
