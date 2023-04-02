@@ -171,7 +171,7 @@ async def _(bot: Bot, event: GroupIncreaseNoticeEvent):
                 )
             else:
                 await group_increase_handle.send(
-                    "[[_task|group_welcome]]新人快跑啊！！本群现状↓（快使用自定义！）"
+                    "[[_task|group_welcome]]新人快跑啊！！本群现状↓"
                     + image(
                         IMAGE_PATH
                         / "qxz"
